@@ -11,7 +11,7 @@ export class LoginPage {
     closeButton = '.close';
 
 
-    // Login 
+    // function for login
     async login(username: any, password: any) {
         await this.page.locator(this.loginMenu).click(); 
         await this.page.fill(this.uernameInput, username);

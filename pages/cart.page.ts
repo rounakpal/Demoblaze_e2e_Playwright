@@ -4,7 +4,7 @@ export class Cart {
     constructor(private page: Page) {}
 
     async cartPage(){
-        // Close login modal if present
+    // Close login modal if present
     const loginModal = this.page.locator('#logInModal');
     if (await loginModal.isVisible().catch(() => false)) {
       await this.page.keyboard.press('Escape');
